@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#080A0C"
+    tools:context=".Starting.ConfirmSeedPhrase_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_icon" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:src="@drawable/wallet_progress3" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtView_confirmSeedPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Seed Phrase"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select each word in the order it was \npresented to you"
+        android:textColor="#8FA2B7"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/txtView_seedPhraseNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3."
+            android:textColor="#8FA2B7"
+            android:textSize="50sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/txtView_seedPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txtView_seedPhraseNumber"
+            android:text="abuse"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/seedconfirmprogress"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_actualSeedPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/black"
+        card_view:cardCornerRadius="15dp"
+        android:layout_marginTop="30dp"
+        android:elevation="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:elevation="25dp"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_seedPhrase1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="future"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@+id/cv_2"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_seedPhrase2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="frequent"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    android:layout_alignParentEnd="true"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_seedPhrase3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="target"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_seedPhrase4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="abuse"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_6"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@+id/cv_5"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_seedPhrase5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="organ"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_7"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    android:layout_alignParentEnd="true"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_seedPhrase6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bubble"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text="Next"/>
+
+
+
+</LinearLayout>

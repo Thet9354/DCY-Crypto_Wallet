@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080A0C"
+    android:orientation="vertical"
+    tools:context=".Starting.ImportFromSeed_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/arrow_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Import From Seed"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/editTxt_seedPhrase"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/seedbtn_bg"
+            android:drawableRight="@drawable/eye"
+            android:textColor="@color/white"
+            android:hint="Seed Phrase"
+            android:padding="15dp"
+            android:textColorHint="#6A84A0" />
+
+        <ImageView
+            android:id="@+id/imgView_scan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/scan" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <EditText
+            android:id="@+id/editTxt_newPassword"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/seedbtn_bg"
+            android:drawableRight="@drawable/eye"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#6A84A0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Must be at least 8 characters"
+            android:layout_below="@+id/editTxt_newPassword"
+            android:textColor="#6A84A0"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editTxt_confirmPassword"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/seedbtn_bg"
+            android:drawableRight="@drawable/eye"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:textColorHint="#6A84A0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtView_faceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Sign in with Face ID?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_faceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:layout_toRightOf="@+id/txtView_faceID"
+            android:checked="true"
+            android:switchMinWidth="50dp"
+            android:theme="@style/faceIDSwitch"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By proceeding, you agree to these Term and \nConditions."
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_import"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_btn"
+        android:backgroundTint="#101419"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:text="Import"
+        android:textColor="#384657"
+        android:textAllCaps="false"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

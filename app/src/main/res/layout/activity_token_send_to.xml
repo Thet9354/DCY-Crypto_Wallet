@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080A0C"
+    android:orientation="vertical"
+    tools:context=".SentPages.TokenSendTo_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sent To"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_cancel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/txtView_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/imgView_acc"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bitcoin"
+                    android:layout_below="@+id/txtView_from"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtView_account1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account 1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/txtView_from"
+                    android:layout_toRightOf="@+id/imgView_acc"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtView_accBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtView_account1"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/imgView_acc"
+                    android:text="Balance: 19.2371 BNB"
+                    android:textColor="#6A84A0"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/btn_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_forward"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/txtView_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/editTxt_sendTo"
+                    android:layout_width="370dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Seach, public address (0x), or ENS"
+                    android:textColorHint="#6A84A0"
+                    android:layout_below="@+id/txtView_to"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/seedbtn_bg"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtView_transferBetweenMyAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer Between My Accounts"
+                android:textColor="@color/first"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent"
+                android:textColor="#6A84A0"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#080A0C"
+    tools:context=".Starting.SecureWallet_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_icon" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:src="@drawable/wallet_progress2" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/shield"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Secure Your Wallet"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8FA2B7"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Don't risk losing your funds. Protect your wallet by \nsaving your Seed phrase in a place \nyou trust."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8FA2B7"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="It's the only way to recover your wallet if you get \nlcoked out of the app or get a new device."/>
+
+    <TextView
+        android:id="@+id/txtView_remindMeLtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remind Me Later"
+        android:textColor="#5F97FF"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_createNewWallet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Create a New Wallet"/>
+
+
+</LinearLayout>

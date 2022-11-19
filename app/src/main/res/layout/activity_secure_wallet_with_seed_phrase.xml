@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080A0C"
+    android:orientation="vertical"
+    tools:context=".Starting.SecureWalletWithSeedPhrase_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_toRightOf="@+id/btn_back"
+                    android:src="@drawable/wallet_progress2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtView_secureWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Secure Your Wallet"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_moreInfo"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/moreinfo" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure your wallet's Seed Phrase"
+                android:textColor="#8FA2B7"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write down your seed phrase on a piece of paper \nand store in a safe place."
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txtView_security"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security level: "
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very strong"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/txtView_security"/>
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/greenlines"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Risks are:"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• You lose it"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• You forgot where you put it"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Someone else finds it"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other option: Doesn't have to be paper!"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips:"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Store in bank vault"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Store in a safe"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Store in multiple secret places"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_createNewWallet"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="Create a New Wallet"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

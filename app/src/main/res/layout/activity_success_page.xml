@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#080A0C"
+    tools:context=".Starting.SuccessPage_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_icon" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:src="@drawable/wallet_progress3" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="280dp"
+        android:src="@drawable/success"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtView_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success!"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You've successfully protected your wallet. \nRemember to keep your seed phrase safe, it's \nyour responsibility"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DefiSquid cannot recover your wallet should \nyou lose it. You can find your seed phrase in \nSettings ? Security &amp; Privacy"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Next"/>
+
+
+
+</LinearLayout>

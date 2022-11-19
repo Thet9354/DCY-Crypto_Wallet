@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable-v24/button_bg.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable-xhdpi/ic_settings.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable/gradient_btn.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable/ic_cancel.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable/import_bg.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable/round_corner.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/drawable/seedbtn_bg.xml" value="0.281" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_confirm_seed_phrase.xml" value="0.541025641025641" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_home_page.xml" value="0.5604166666666667" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_import_from_seed.xml" value="0.5" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_main.xml" value="0.47064676616915424" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_main_menu.xml" value="0.5374358974358975" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_new_wallet.xml" value="0.5374358974358975" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_secure_wallet.xml" value="0.5494791666666666" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_secure_wallet_with_seed_phrase.xml" value="0.5494791666666666" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_splash.xml" value="0.5235897435897436" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_starting_page.xml" value="0.5374358974358975" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_success_page.xml" value="0.5604166666666667" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_token_send_to.xml" value="0.541025641025641" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/activity_write_down_seed_phrase.xml" value="0.5604166666666667" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/fragment_wallet.xml" value="0.5374358974358975" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/row_token.xml" value="0.5374358974358975" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/layout/slide_layout.xml" value="0.5458333333333333" />
+        <entry key="..\:/Users/Phoon Thet Pine/AndroidStudioProjects/DYCCryptoWallet/app/src/main/res/menu/navigation.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

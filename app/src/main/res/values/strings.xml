@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">DYC Crypto Wallet</string>
+
+    <string name="title_Wallet">Wallet</string>
+    <string name="title_Swap">Swap</string>
+    <string name="title_setting">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="token">
+        <item name="Bitcoin">Bitcoin</item>
+        <item name="Ethereum">Ethereum</item>
+        <item name="Tether">Tether</item>
+        <item name="USD Coin">USD Coin</item>
+        <item name="Binance">Binance</item>
+        <item name="XRP">XRP</item>
+        <item name="Dogecoin">Dogecoin</item>
+        <item name="Cardano">Cardano</item>
+        <item name="Polygon">Polygon</item>
+        <item name="Polkadot">Polkadot</item>
+    </string-array>
+
+    <string-array name="tokenPrice">
+        <item name="Bitcoin">$16,698.95</item>
+        <item name="Ethereum">$1,224.73</item>
+        <item name="Tether">$0.9993</item>
+        <item name="USD Coin">$1.00</item>
+        <item name="Binance">$272.40</item>
+        <item name="XRP">$0.3791</item>
+        <item name="Dogecoin">$0.08663</item>
+        <item name="Cardano">$0.3333</item>
+        <item name="Polygon">$0.9161</item>
+        <item name="Polkadot">$5.81</item>
+    </string-array>
+
+    <string-array name="tokenPriceChange">
+        <item name="Bitcoin">-0.26%</item>
+        <item name="Ethereum">-0.79%</item>
+        <item name="Tether">+0.00%</item>
+        <item name="USD Coin">+0.01%</item>
+        <item name="Binance">-1.42%</item>
+        <item name="XRP">-1.10%</item>
+        <item name="Dogecoin">-0.76%</item>
+        <item name="Cardano">-1.61%</item>
+        <item name="Polygon">-2.64%</item>
+        <item name="Polkadot">-2.90%</item>
+    </string-array>
+
+    <string-array name="tokenOwned">
+        <item name="Bitcoin">3.5873</item>
+        <item name="Ethereum">23.573</item>
+        <item name="Tether">200.47284</item>
+        <item name="USD Coin">436.4719</item>
+        <item name="Binance">3.799</item>
+        <item name="XRP">300.39819</item>
+        <item name="Dogecoin">100.482</item>
+        <item name="Cardano">199.3819</item>
+        <item name="Polygon">159.4920</item>
+        <item name="Polkadot">250.4819</item>
+    </string-array>
+
+    <string-array name="tokenID">
+        <item name="Bitcoin">BTC</item>
+        <item name="Ethereum">ETH</item>
+        <item name="Tether">USDT</item>
+        <item name="USD Coin">USDC</item>
+        <item name="Binance">BNB</item>
+        <item name="XRP">XRP</item>
+        <item name="Dogecoin">DOGE</item>
+        <item name="Cardano">ADA</item>
+        <item name="Polygon">MATIC</item>
+        <item name="Polkadot">DOT</item>
+    </string-array>
+</resources>

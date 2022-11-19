@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080A0C"
+    android:orientation="vertical"
+    tools:context=".Starting.newWallet_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_icon" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:src="@drawable/wallet_progress1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtView_createPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Password"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This password will unlock your Metamask wallet \nonly on this service"
+        android:textColor="#8FA2B7"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <EditText
+            android:id="@+id/editTxt_newPassword"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/seedbtn_bg"
+            android:drawableRight="@drawable/eye"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#6A84A0" />
+
+        <TextView
+            android:id="@+id/txtView_passwordStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password strength:"
+            android:layout_below="@+id/editTxt_newPassword"
+            android:textColor="#6A84A0"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTxt_newPassword"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/txtView_passwordStrength"
+            android:text="Good"
+            android:textColor="#76E268" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <EditText
+            android:id="@+id/editTxt_confirmNewPassword"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/seedbtn_bg"
+            android:drawableRight="@drawable/eye"
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#6A84A0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTxt_confirmNewPassword"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Must be at least 8 chracters"
+            android:textColor="#6A84A0" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtView_faceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Sign in with Face ID?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_faceID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:layout_toRightOf="@+id/txtView_faceID"
+            android:checked="true"
+            android:switchMinWidth="50dp"
+            android:theme="@style/faceIDSwitch"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cb_TC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:checked="true"
+            android:text="I understand that DeGe cannot recover this \npassword for me. Learn more"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtView_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have to agree to the terms and condition to proceed"
+            android:textColor="@color/warn"
+            android:layout_below="@+id/cb_TC"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            android:layout_marginStart="55dp"/>
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_createNewWallet"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/gradient_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text="Create a New Wallet"/>
+
+
+
+
+
+</LinearLayout>

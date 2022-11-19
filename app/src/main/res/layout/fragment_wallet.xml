@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#080A0C"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".Fragment.wallet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/txtView_network"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Etherium Main"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_down"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/txtView_network"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_cryptoCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.2362 "
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/txtView_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtView_cryptoCurrency"
+                    android:text="ETH"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtView_accBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="$16,858.15 "
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtView_profitPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_toRightOf="@+id/txtView_accBalance"
+                    android:text="+0.7%"
+                    android:textColor="@color/mygreen"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_sent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sent"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@+id/cv_2"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_receive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Receive"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    card_view:cardBackgroundColor="@color/cardbg"
+                    card_view:cardCornerRadius="15dp"
+                    android:elevation="25dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toRightOf="@+id/cv_3"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:elevation="25dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/txtView_buy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtView_token"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Token"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtView_collectibles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/txtView_token"
+                    android:text="Collectibles"
+                    android:textColor="#8FA2B7"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_cryptoToken"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_collectibles"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

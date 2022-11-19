@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/wallet_ic"
+        android:title="@string/title_Wallet" />
+
+    <item
+        android:id="@+id/navigation_swap"
+        android:icon="@drawable/swap_ic"
+        android:title="@string/title_Swap" />
+
+    <item
+        android:id="@+id/navigation_seting"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/title_setting" />
+
+
+</menu>

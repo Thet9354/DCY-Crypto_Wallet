@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#080A0C">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="6dp"
+        android:background="#080A0C"
+        card_view:cardElevation="@dimen/cardview_default_elevation"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#080A0C"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgView_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/binance"/>
+
+            <TextView
+                android:id="@+id/txtView_Token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_toRightOf="@+id/imgView_token"
+                android:text="Binance Coin"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtView_TokenPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgView_token"
+                android:layout_below="@+id/txtView_Token"
+                android:textColor="@color/dividerLight"
+                android:layout_marginTop="20dp"
+                android:text="$226.69"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginStart="3dp"/>
+
+            <TextView
+                android:id="@+id/txtView_PriceChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtView_Token"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/txtView_TokenPrice"
+                android:text="+2%"
+                android:textColor="@color/mygreen"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtView_tokenOwned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txtView_tokenID"
+                android:layout_below="@+id/txtView_Token"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:text="19.2371"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+
+            <TextView
+                android:id="@+id/txtView_tokenID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txtView_Token"
+                android:textColor="@color/white"
+                android:text="BNB"
+                android:layout_marginEnd="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
