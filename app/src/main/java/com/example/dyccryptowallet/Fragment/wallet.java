@@ -1,6 +1,7 @@
 package com.example.dyccryptowallet.Fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ import com.example.dyccryptowallet.Adapter.CollectiblesAdapter;
 import com.example.dyccryptowallet.Adapter.TokenAdapter;
 import com.example.dyccryptowallet.Model.CryptoModel;
 import com.example.dyccryptowallet.R;
+import com.example.dyccryptowallet.SentPages.TokenSendTo_Activity;
 
 import java.util.ArrayList;
 
@@ -67,6 +69,7 @@ public class wallet extends Fragment {
         txtView_profitPercentage = view.findViewById(R.id.txtView_profitPercentage);
         txtView_token = view.findViewById(R.id.txtView_token);
         txtView_collectibles = view.findViewById(R.id.txtView_collectibles);
+        txtView_sent = view.findViewById(R.id.txtView_sent);
 
         //androidx.recyclerview.widget.RecyclerView
         rc_cryptoToken = view.findViewById(R.id.rc_cryptoToken);
@@ -134,7 +137,7 @@ public class wallet extends Fragment {
         txtView_sent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getActivity(), TokenSendTo_Activity.class));
             }
         });
     }

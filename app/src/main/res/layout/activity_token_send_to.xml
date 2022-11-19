@@ -35,10 +35,10 @@
                     android:id="@+id/btn_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_cancel"
                     android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
-                    android:layout_centerVertical="true"/>
+                    android:src="@drawable/ic_cancel" />
 
             </RelativeLayout>
 
@@ -67,21 +67,21 @@
                     android:layout_marginTop="10dp"/>
 
                 <TextView
-                    android:id="@+id/txtView_account1"
+                    android:id="@+id/txtView_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtView_from"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/imgView_acc"
                     android:text="Account 1"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:layout_below="@+id/txtView_from"
-                    android:layout_toRightOf="@+id/imgView_acc"
-                    android:layout_marginStart="10dp"/>
+                    android:textSize="15sp" />
 
                 <TextView
                     android:id="@+id/txtView_accBalance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txtView_account1"
+                    android:layout_below="@+id/txtView_account"
                     android:layout_marginStart="10dp"
                     android:layout_toRightOf="@+id/imgView_acc"
                     android:text="Balance: 19.2371 BNB"
@@ -118,13 +118,13 @@
                     android:id="@+id/editTxt_sendTo"
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
-                    android:hint="Seach, public address (0x), or ENS"
-                    android:textColorHint="#6A84A0"
                     android:layout_below="@+id/txtView_to"
-                    android:padding="10dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/seedbtn_bg"/>
+                    android:background="@drawable/seedbtn_bg"
+                    android:hint="Seach, public address (0x), or ENS"
+                    android:padding="10dp"
+                    android:textColorHint="#6A84A0" />
 
             </RelativeLayout>
 
@@ -148,7 +148,7 @@
                 android:textSize="18sp"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rc_accounts"
+                android:id="@+id/rc_recentSendToAcc"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="20dp"/>

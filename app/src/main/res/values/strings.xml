@@ -72,4 +72,18 @@
         <item name="Polygon">MATIC</item>
         <item name="Polkadot">DOT</item>
     </string-array>
+
+    <string-array name="AccountName">
+        <item name="Account 1">Account 1</item>
+        <item name="Account 2">Account 2</item>
+        <item name="Account 3">Account 3</item>
+        <item name="Account 4">Account 4</item>
+    </string-array>
+
+    <string-array name="WalletAddress">
+        <item name="0x4Dc6...DxR9">0x4Dc6...DxR9</item>
+        <item name="0x3Dc6...DxE9">0x3Dc6...DxE9</item>
+        <item name="0x2Dc6...DcT9">0x2Dc6...DcT9</item>
+        <item name="0x3R2E...DxR9">0x3R2E...DxR9</item>
+    </string-array>
 </resources>

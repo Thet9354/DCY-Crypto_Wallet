@@ -14,7 +14,7 @@
         android:theme="@style/Theme.DYCCryptoWallet"
         tools:targetApi="31">
         <activity
-            android:name=".TokenSendTo_Activity"
+            android:name=".SentPages.TokenSendTo_Activity"
             android:exported="false" />
         <activity
             android:name=".HomePage.MainMenu_Activity"
